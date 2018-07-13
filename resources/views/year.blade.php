@@ -71,15 +71,15 @@ HTML;
                 </select>
             </div>
         </div>
-
+        <h3> Actividades Realizadas </h3>
         <div class="row">
-            <h3> Actividades Realizadas </h3>
+
             <br>
             <ol>
             <?php
             $campos = DB::table('campos_particulares')
                 ->join('formato_bitacora','formato_bitacora.ID_Particular', '=', 'campos_particulares.ID_Particular')
-                ->where('ID_Tipo_Bitacora','10T')->get();
+                ->where('ID_Tipo_Bitacora','13T')->get();
             $numero=0;
 
             foreach ($campos as $campo) {
@@ -90,13 +90,6 @@ HTML;
 HTML;
             }
             ?>
-            <!--
-                    foreach ($campos as $campo) {
-                        echo <<<HTML
-                          <input type="checkbox" name="weekOp[]" value="$campo->ID_Particular">$campo
-                            <br>
-HTML;
--->
 
             </ol>
 

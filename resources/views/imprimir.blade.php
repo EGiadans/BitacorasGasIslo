@@ -41,7 +41,28 @@
                     <div class="card-body">
                         Folio:
                         <?php
-                        echo 'Folio';
+                        $option = $_GET['selectBit'];
+                        $date = $_GET['selectDate'];
+
+                        $estacion = $_GET['selectEst'];
+                        $idEst = DB::table('estaciones')
+                            ->where('Nombre',$estacion)
+                            ->value('ID_Estacion');
+
+                        $id = DB::table('bitacoras')
+                            ->where([
+                                ['Fecha',$date],
+                                ['Nombre_Bitacora',$option],
+                                ['ID_estacion',$idEst],
+                            ])->value('ID_Bitacora');
+
+                        $folio = DB::table($estacion)
+                            ->where('id_bitacora',$id)
+                            ->value('id');
+
+                        echo $folio;
+
+
                         ?>
                     </div>
                 </div>

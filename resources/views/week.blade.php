@@ -31,15 +31,15 @@
         <div class="col">
             <img src="logo.png" alt="HTML5 Icon">
         </div>
-
+<!--
         <div class="col">
             <div class="card">
                 <div class="card-body">
                     Numero de permiso:
                     <?php
-                    $var = $_GET['selectEst'];
-                    $permiso = App\Estacion::where('Nombre',$var)->value('permiso_cre');
-                    echo $permiso;
+                    //$var = $_GET['selectEst'];
+                    //$permiso = App\Estacion::where('Nombre',$var)->value('permiso_cre');
+                    //echo $permiso;
                     ?>
                 </div>
             </div>
@@ -50,8 +50,9 @@
                 <div class="card-body">
                     <p>Estacion de servicio:</p>
                     <?php
-                    $var = $_GET['selectEst'];
-                    echo $var;
+
+                    //$var = $_GET['selectEst'];
+                    //echo $var;
                     ?>
                 </div>
             </div>
@@ -62,8 +63,8 @@
                 <div class="card-body">
                     <p>Gerente:</p>
                     <?php
-                    $var = $_GET['selectGer'];
-                    echo $var;
+                    //$var = $_GET['selectGer'];
+                    //echo $var;
                     ?>
                 </div>
             </div>
@@ -74,13 +75,13 @@
                 <div class="card-body">
                     <p>Fecha:</p>
                     <?php
-                    $var = $_GET['selectDate'];
-                    echo $var;
+                    //$var = $_GET['selectDate'];
+                    //echo $var;
                     ?>
                 </div>
             </div>
         </div>
-
+-->
     </div>
 
 

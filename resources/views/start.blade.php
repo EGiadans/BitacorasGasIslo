@@ -34,7 +34,7 @@
   <body>
 
 
-  <form action="{{url('/dailyBit')}}" method="GET">
+  <form action="{{ action('MainController@validator') }}" method="GET">
     <div class="container">
     <br>
     <div class="container">

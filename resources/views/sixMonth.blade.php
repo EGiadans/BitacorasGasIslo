@@ -79,7 +79,7 @@ HTML;
             <?php
             $campos = DB::table('campos_particulares')
                 ->join('formato_bitacora','formato_bitacora.ID_Particular', '=', 'campos_particulares.ID_Particular')
-                ->where('ID_Tipo_Bitacora','10T')->get();
+                ->where('ID_Tipo_Bitacora','12T')->get();
             $numero=0;
 
             foreach ($campos as $campo) {

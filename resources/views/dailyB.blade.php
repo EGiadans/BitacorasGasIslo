@@ -44,7 +44,7 @@
         <div class="col">
           <img src="logo.png" alt="HTML5 Icon">
         </div>
-
+<!--
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -93,10 +93,11 @@
             </div>
           </div>
         </div>
-
+-->
       </div>
 
       <br>
+
 
       <div class="row">
 
@@ -109,7 +110,7 @@
               <center>
             <h6 class="card-title">1. Operacion y Mantenimiento preventivo</h6>
 
-                  <a href={{url('dailyBit/op1')}} class="btn btn-secondary">Llenar</a>
+                  <a href={{url('diaria/op1')}} class="btn btn-secondary">Llenar</a>
 
               </center>
           </div>
@@ -124,7 +125,7 @@
             <center>
               <h6 class="card-title">2. Recepcion y Descarga de Productos</h6>
 
-              <a href="http://www.wikipedia.org" class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op2')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -139,7 +140,7 @@
             <center>
               <h6 class="card-title">3. Desviacion de Balance de Producto</h6>
 
-              <a href="http://www.wikipedia.org" class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op3')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -154,7 +155,7 @@
             <center>
               <h6 class="card-title">4. Incidentes e inspecciones </h6>
 
-              <a href={{url('dailyBit/op4')}} class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op4')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -177,7 +178,7 @@
             <center>
               <h6 class="card-title">5. Limpieza programada y No programada (incluye LE)</h6>
 
-              <a href={{url('dailyBit/op1')}} class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op5')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -192,7 +193,7 @@
             <center>
               <h6 class="card-title">6. Registro de derrames de hidrocarburos</h6>
 
-              <a href={{url('dailyBit/op1')}} class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op6')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -207,7 +208,7 @@
             <center>
               <h6 class="card-title">7. Manejo de Residuos Peligrosos</h6>
 
-              <a href={{url('dailyBit/op1')}} class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op7')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -222,7 +223,7 @@
             <center>
               <h6 class="card-title">8. Quejas y Sugerencias</h6>
 
-              <a href={{url('dailyBit/op1')}} class="btn btn-secondary">Llenar</a>
+              <a href={{url('diaria/op8')}} class="btn btn-secondary">Llenar</a>
 
             </center>
           </div>
@@ -232,13 +233,16 @@
 
       <br>
 
+
       <div class="row" align="center">
         <button type="submit" name="btnDay" value="Enviar"> Enviar </button>
         <button type="submit" name="btnDay" value="Cancelar"> Cancelar </button>
       </div>
 
+
       </form>
 </div>
+    <br>
 
 
     <!-- Optional JavaScript -->
