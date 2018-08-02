@@ -188,7 +188,7 @@ class MainController extends Controller
             $dato->ejecuta = $ejecuta;
 
             $dato->save();
-            echo 'guardado';
+            //echo 'guardado';
 
             //should go back to dailyB
 
@@ -200,6 +200,7 @@ class MainController extends Controller
             //should go back to dailyB
             return redirect('/diaria');
         }
+        return redirect('/diaria');
     }
 
     //This method should receive the selected values of week Bitacora and save them into the database
